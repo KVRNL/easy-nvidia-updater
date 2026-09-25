@@ -7,7 +7,6 @@
 ### NVIDIA drivers, always up to date — quietly
 
 <a href="https://github.com/KVRNL/easy-nvidia-updater/releases/latest"><img alt="Latest version" src="https://img.shields.io/github/v/release/KVRNL/easy-nvidia-updater?display_name=tag&label=version&color=F5A623&labelColor=0d0d0f&style=for-the-badge"></a>
-<a href="https://github.com/KVRNL/easy-nvidia-updater/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/KVRNL/easy-nvidia-updater/total?label=downloads&color=F5A623&labelColor=0d0d0f&style=for-the-badge"></a>
 <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0d0d0f?style=for-the-badge&labelColor=0d0d0f">
 <img alt="Price" src="https://img.shields.io/badge/price-FREE-F5A623?style=for-the-badge&labelColor=0d0d0f">
 <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Proprietary%20Freeware-0d0d0f?style=for-the-badge&labelColor=0d0d0f"></a>
@@ -39,8 +38,8 @@ Choose how it works: fully automatic silent installs in the background, or a qui
 
 ## Download &amp; install
 
-Easy NVidia Updater is **completely free**. Downloads run through a free KVRNL account so every
-install gets its own license key.
+Easy NVidia Updater is **completely free**. Each install needs its own license key, which you get
+with a free KVRNL account.
 
 1. Go to **[kvrnl.io/products/easy-nvidia-updater/](https://kvrnl.io/products/easy-nvidia-updater/)**
 2. Create a free account — email verification, nothing else
