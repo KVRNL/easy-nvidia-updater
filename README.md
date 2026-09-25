@@ -72,12 +72,42 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 ## What's new
 
-**v1.0.0** — 2026-07-07
-  - Initial release.
-  - Automatically detects your NVIDIA GPU — single, dual, desktop or laptop — with no model-picking, and tracks your installed driver version.
-  - Checks NVIDIA daily or weekly for a newer Game Ready or Studio driver, and either installs it silently in the background or notifies you first — your choice, in Settings.
-  - Silent auto-install uses a one-time Windows admin approval, then never prompts again; manual mode installs with a single click.
-  - Clean, driver-only install — skips the GeForce Experience bloat. Lives quietly in the system tray with a simple status + settings panel.
+**v1.0.7** — 2026-09-25
+  - Pin the tray panel anywhere: grab it by the top and drag it wherever you like, and it pins itself there. You can also press the pin button in its corner.
+  - A pinned panel stays open and stays exactly where you put it, even after restarts and updates, until you unpin it.
+  - Unpin with the same button and it goes back to being a normal pop-up above the tray icon.
+  - Right-clicking the tray icon now opens the same panel as left-clicking, instead of a separate menu. Double-click still opens the full app.
+
+**v1.0.6** — 2026-09-25
+  - New tray popup: click the tray icon for a mini control center that opens right above it, instead of the full window.
+  - At a glance it shows whether your driver is up to date, your GPU, the installed and latest versions, and when it last checked, with one button to check or install.
+  - Two quick switches right in the popup: Auto-install and Studio drivers.
+  - Open app and Settings buttons take you straight to the full window, on the right tab. Double-clicking the tray icon still opens the full app.
+  - The popup closes when you click anywhere else, and shows download progress live while a driver installs.
+  - The app now shows 'Checking with NVIDIA…' while a check is running, and pressing Check now during a check waits for that same check instead of doing nothing.
+
+**v1.0.5** — 2026-09-05
+  - A complete redesign. The app is now organised into five clear tabs: Overview, Settings, History, Support and About.
+  - Overview puts everything that matters on one screen: a big status indicator, your GPU, installed and latest driver versions, when it last checked, and one clear button.
+  - Settings are now plain-English choice cards that explain what each option does, plus proper toggles for Launch at login and Clean install. Every change still saves instantly.
+  - History has its own tab with the full record of installs.
+  - The sidebar shows your driver status at a glance and marks Overview with a dot when an update is waiting.
+  - The window is a little wider to fit the new layout, and remembers which tab you were on.
+
+**v1.0.4** — 2026-09-05
+  - Driver notifications now actually show up on Windows. A missing app identity setting meant the alerts from 'Notify me' mode were being silently dropped.
+  - If a check can't complete (no internet, or Windows still waking up after boot), the app now retries within the hour instead of waiting until the next day or week.
+  - More patience on slow machines and connections: GPU detection and the NVIDIA lookup wait longer before giving up, so a slow start no longer reads as 'No NVIDIA GPU detected'.
+  - Automatic mode no longer re-downloads and retries the same failed driver every day. After a failed attempt it notifies you instead and lets you retry with one click, then resumes on its own after three days.
+  - No more pop-up notification when you already have the window open.
+  - Fixed the activation screen firing twice if you pressed Enter while a key was still being checked.
+
+**v1.0.3** — 2026-09-02
+  - The app now installs its own updates. Before, an update could download and then wait indefinitely because the app lives in the tray and is never closed. It now installs quietly when idle, or notifies you if you have the window open so you can pick the moment.
+  - Added the newest NVIDIA cards: GeForce RTX 5060, RTX 5050 and RTX 5090 D v2 on desktop, and the RTX 5070, RTX 5060 and RTX 5050 laptop GPUs. Owners of these previously saw 'couldn't match your GPU'.
+  - A driver download that stops receiving data no longer hangs the install. It fails cleanly after 90 seconds and you can retry.
+  - Fixed the app reporting 'admin approval cancelled' too early when you took more than a minute to answer the Windows prompt, which could let the install run in the background without the app knowing.
+  - Small cleanups: leftover install-queue files are removed, and a settings hint that could get stuck on an error message now resets.
 
 Full history → **[kvrnl.io/changelog/easy-nvidia-updater](https://kvrnl.io/changelog/easy-nvidia-updater/)**
 
