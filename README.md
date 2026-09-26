@@ -71,6 +71,14 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 ## What's new
 
+**v1.0.8** — 2026-09-25
+  - A brand-new activation screen that walks you through getting your free key step by step, with buttons that open the right page on kvrnl.io. Easy to follow even if you downloaded the app from somewhere else.
+  - A Paste button for your key. Extra spaces or line breaks picked up while copying are cleaned up automatically.
+  - Clearer messages when a key can't be accepted, each with a button that takes you straight to the fix.
+  - A temporary problem on KVRNL's side no longer asks you to re-enter your key, and no longer interrupts the app while it's running.
+  - The app now stays fully locked until your key is activated.
+  - Fixed a brand-new install showing a "key isn't valid" message before anything was typed.
+
 **v1.0.7** — 2026-09-25
   - Pin the tray panel anywhere: grab it by the top and drag it wherever you like, and it pins itself there. You can also press the pin button in its corner.
   - A pinned panel stays open and stays exactly where you put it, even after restarts and updates, until you unpin it.
@@ -100,13 +108,6 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
   - Automatic mode no longer re-downloads and retries the same failed driver every day. After a failed attempt it notifies you instead and lets you retry with one click, then resumes on its own after three days.
   - No more pop-up notification when you already have the window open.
   - Fixed the activation screen firing twice if you pressed Enter while a key was still being checked.
-
-**v1.0.3** — 2026-09-02
-  - The app now installs its own updates. Before, an update could download and then wait indefinitely because the app lives in the tray and is never closed. It now installs quietly when idle, or notifies you if you have the window open so you can pick the moment.
-  - Added the newest NVIDIA cards: GeForce RTX 5060, RTX 5050 and RTX 5090 D v2 on desktop, and the RTX 5070, RTX 5060 and RTX 5050 laptop GPUs. Owners of these previously saw 'couldn't match your GPU'.
-  - A driver download that stops receiving data no longer hangs the install. It fails cleanly after 90 seconds and you can retry.
-  - Fixed the app reporting 'admin approval cancelled' too early when you took more than a minute to answer the Windows prompt, which could let the install run in the background without the app knowing.
-  - Small cleanups: leftover install-queue files are removed, and a settings hint that could get stuck on an error message now resets.
 
 Full history → **[kvrnl.io/changelog/easy-nvidia-updater](https://kvrnl.io/changelog/easy-nvidia-updater/)**
 
