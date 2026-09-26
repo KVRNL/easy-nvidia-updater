@@ -71,6 +71,11 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 ## What's new
 
+**v1.0.9** — 2026-09-26
+  - New in Settings: Share usage stats. When it's on, the app tells KVRNL about your PC's basics (Windows version, language, region, time zone, screen, processor, memory, graphics card and driver) and how the app is doing (checks, installs, settings and errors). It's linked to your KVRNL account, never includes your files or anything you type, and you can turn it off at any time.
+  - This helps us spot and fix problems faster, especially driver installs that fail on certain setups.
+  - The regular key check now also includes which version of the app you're running, so we can tell when everyone has the latest fixes.
+
 **v1.0.8** — 2026-09-25
   - A brand-new activation screen that walks you through getting your free key step by step, with buttons that open the right page on kvrnl.io. Easy to follow even if you downloaded the app from somewhere else.
   - A Paste button for your key. Extra spaces or line breaks picked up while copying are cleaned up automatically.
@@ -100,14 +105,6 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
   - History has its own tab with the full record of installs.
   - The sidebar shows your driver status at a glance and marks Overview with a dot when an update is waiting.
   - The window is a little wider to fit the new layout, and remembers which tab you were on.
-
-**v1.0.4** — 2026-09-05
-  - Driver notifications now actually show up on Windows. A missing app identity setting meant the alerts from 'Notify me' mode were being silently dropped.
-  - If a check can't complete (no internet, or Windows still waking up after boot), the app now retries within the hour instead of waiting until the next day or week.
-  - More patience on slow machines and connections: GPU detection and the NVIDIA lookup wait longer before giving up, so a slow start no longer reads as 'No NVIDIA GPU detected'.
-  - Automatic mode no longer re-downloads and retries the same failed driver every day. After a failed attempt it notifies you instead and lets you retry with one click, then resumes on its own after three days.
-  - No more pop-up notification when you already have the window open.
-  - Fixed the activation screen firing twice if you pressed Enter while a key was still being checked.
 
 Full history → **[kvrnl.io/changelog/easy-nvidia-updater](https://kvrnl.io/changelog/easy-nvidia-updater/)**
 
