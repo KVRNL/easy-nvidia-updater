@@ -71,6 +71,11 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 ## What's new
 
+**v1.0.10** — 2026-10-25
+  - Bug reports now go straight to the KVRNL team by email, and the app tells you clearly whether yours was sent.
+  - After a report is sent, the form clears so it's ready for the next one.
+  - If a report can't go out, you now get a plain message saying why.
+
 **v1.0.9** — 2026-09-26
   - New in Settings: Share usage stats. When it's on, the app tells KVRNL about your PC's basics (Windows version, language, region, time zone, screen, processor, memory, graphics card and driver) and how the app is doing (checks, installs, settings and errors). It's linked to your KVRNL account, never includes your files or anything you type, and you can turn it off at any time.
   - This helps us spot and fix problems faster, especially driver installs that fail on certain setups.
@@ -97,14 +102,6 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
   - Open app and Settings buttons take you straight to the full window, on the right tab. Double-clicking the tray icon still opens the full app.
   - The popup closes when you click anywhere else, and shows download progress live while a driver installs.
   - The app now shows 'Checking with NVIDIA…' while a check is running, and pressing Check now during a check waits for that same check instead of doing nothing.
-
-**v1.0.5** — 2026-09-05
-  - A complete redesign. The app is now organised into five clear tabs: Overview, Settings, History, Support and About.
-  - Overview puts everything that matters on one screen: a big status indicator, your GPU, installed and latest driver versions, when it last checked, and one clear button.
-  - Settings are now plain-English choice cards that explain what each option does, plus proper toggles for Launch at login and Clean install. Every change still saves instantly.
-  - History has its own tab with the full record of installs.
-  - The sidebar shows your driver status at a glance and marks Overview with a dot when an update is waiting.
-  - The window is a little wider to fit the new layout, and remembers which tab you were on.
 
 Full history → **[kvrnl.io/changelog/easy-nvidia-updater](https://kvrnl.io/changelog/easy-nvidia-updater/)**
 
